@@ -1,17 +1,69 @@
-# Skinny Bones Jekyll Starter
+# Forty - Jekyll Theme
 
-Just a little something I'm using to jump start a site refresh. I like to think of it as a starter for building your own Jekyll site. I purposely keep the styling minimal and bare to make it easier to add your own flare and markup.
+A Jekyll version of the "Forty" theme by [HTML5 UP](https://html5up.net/).  
 
-I'm currently using a variation of it on my personal website [Made Mistakes](http://mademistakes.com) with some modifications. To learn more about how to use the theme and install it check out the [Skinny Bones demo](http://mmistakes.github.io/skinny-bones-jekyll/) (*work in progress*).
+![Forty Theme](assets/images/forty.jpg "Forty Theme")
 
-![screenshot of Skinny Bones](http://mmistakes.github.io/skinny-bones-jekyll/images/skinny-bones-theme-feature.jpg)
+# How to Use
 
----
+For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details, 
+or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
+and [creating pages](https://jekyllrb.com/docs/pages/).
 
-## Notable Features
+- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
+- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file! The `.gitlab-ci.yml` file is only needed for GitLab Pages, so feel free to delete this if you are using GitHub instead.
 
-* Jekyll 3.x and GitHub Pages compatible.
-* Stylesheet built using Sass.
-* Data files for easier customization of the site navigation/footer and for supporting multiple authors.
-* Optional Disqus comments, table of contents, social sharing links, and Google AdSense ads.
-* And more.
+# Added Features
+
+* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
+* Use `_config.yml` to **set whether the homepage tiles should pull pages or posts**, as well as how many to display.
+* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
+* **Automatic sitemap generation** via the [Jekyll Sitemap Generator](https://github.com/jekyll/jekyll-sitemap) plugin.
+* **Automatic RSS/Atom feed generation** via the [Jekyll Feed](https://github.com/jekyll/jekyll-feed) plugin.
+* **Automatic SEO** via the [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag) plugin.
+* :thumbsup: **Emoji** support via the [Jemoji](https://github.com/jekyll/jemoji) plugin.
+* Set **featured images** in front matter.
+
+# Credits
+
+Original README from HTML5 UP:
+
+```
+Forty by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+
+This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
+creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
+set up to smoothly transition to secondary landing pages (for which a separate page
+template is provided), and includes a number of neat effects (check out the menu!),
+extra features, and all the usual stuff you'd expect. Hope you dig it!
+
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
+
+(* = not included)
+
+AJ
+aj@lkn.io | @ajlkn
+
+
+Credits:
+
+	Demo Images:
+		Unsplash (unsplash.com)
+
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
+
+	Other:
+		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		background-size polyfill (github.com/louisremi)
+		Misc. Sass functions (@HugoGiraudel)
+		Respond.js (j.mp/respondjs)
+		Skel (skel.io)
+```
+
+Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
