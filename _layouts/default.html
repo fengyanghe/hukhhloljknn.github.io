@@ -1,23 +1,22 @@
----
-layout: compress
----
-<!doctype html>
-<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	{% include _head.html %}
+{% include head.html %}
+<link rel="shortcut icon" href="/favicon.ico">
 </head>
-<body id="top-of-page" class="{{ layout.format }}">
-	{% unless page.skip_boilerplate %}
-	{% include _navigation.html %}
-	{% endunless %}
 
-	{% include _masthead.html %}
-	{{ content }}
+<body>
 
-	{% unless page.skip_boilerplate %}
-	{% include _footer.html %}
-	{% endunless %}
 
-	{% include _footer_scripts.html %}
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+{% include Scroll_to_Top.html %}
+
 </body>
+
 </html>

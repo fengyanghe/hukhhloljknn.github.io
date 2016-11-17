@@ -1,67 +1,52 @@
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Phlow&url=https://github.com/Phlow/feeling-responsive&title=Support%20Feeling%20Responsive%20Jekyll%20Theme&language=en_GB&tags=github,jekyll,theme,webdesign&category=software)
+# MAD4Jekyll - Theme for Jekyll 
+
+> !!! Configured for **USER** pages !!!
+
+## Welcome to MAD4Jekyll!
+     
+
+### 'MAD4Jekyll' is a theme for [Jekyll](https://github.com/jekyll/)
+
+> The template has been revised as of August 27th, 2016.
+
+----------
+
+> A big thank you to <a href="https://github.com/patmuk">Patrick Mukherjee</a> for his contribution on regenerating the code.
 
 
-# Newsletter: Stay in Touch for Future Updates
+### It is based on [Clean Blog](http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/) theme by [Start Bootstrap](http://startbootstrap.com/).
 
-If you are a webdesigner interested in Jekyll, the static website generator, this little newsletter is for you. I share tutorials, clever code snippets and information about my own Jekyll Themes called [*Feeling Responsive*][7] and [*Simplicity*][8]. Please don't expect weekly emails :)
+     
+#  Homepage  
 
-[![Subscribe to Jekyll Newsletter](https://phlow.github.io/static/tinyletter_subscribe_button.png)](https://tinyletter.com/feeling-responsive)
+#### Header Image
 
+#### A brief description
 
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-1280x720.jpg)](https://www.youtube.com/embed/3b5zCFSmVvU)
+#### A slider (it is turned off by default, since there is a also a separate section for a gallery)
 
-## A Responsive Jekyll Theme: *Feeling Responsive*
+#### Contact Info
+            
 
-Do you want to get to know *Feeling Responsive*? Than check it out first and have a look on its home at  <http://phlow.github.io/feeling-responsive/>.
+#  Navbar 
 
-To get to know *Feeling Responsive* check out all the features explained in the [documentation][1].
+#### A logo on the left side
+ 
+#### 3 Pages for <a href="{{ site.baseurl }}/writing/">'blogging'</a>, <a href="{{ site.baseurl }}/gallery/">'gallery sliders'</a>, <a href="{{ site.baseurl }}/about/">'about'</a>.
+       
 
-And what license is *Feeling Responsive* released under? [This one][2].
+#####  Search page, with all the tags and categories at the bottom
 
+##### Footnotes poping up.
 
+>## !!! IMPORTANT !!! Before You Begin
+>
+>####  Set the **_config.yml** file, with your personal info!
 
-## Why use this theme?
+## What's Included
 
-Feeling Responsive is heavily customizable.
+#### A full Jekyll environment is included with this theme. If you have Jekyll installed, simply run `jekyll serve` in your command line and preview the build in your browser. You can use `jekyll serve --watch` to watch for changes in the source files as well.
 
-1. Language-Support :)
-2. Optimized for speed and it's responsive.
-3. Built on Foundation Framework.
-4. Six different Headers.
-5. Customizable navigation, footer,...
+#### A Grunt environment is also included. There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering `grunt` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
 
-**[More ›][3]**
-
-
-
-## Changelog
-
-*Feeling Responsive* is in active development. Thank you to everyone who contributed, especially [Róbert Papp][5], [Alexandra von Criegern](https://github.com/plutonik-a) and [Juan Jose Amor Iglesias](https://github.com/jjamor).
-
-**[Read Changelog ›][6]**
-
-
-
-## Video Tutorial
-
-Click the image to [watch the YouTube-Video-Tutorial][4].
-
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-tutorial-frontpage.jpg)](https://www.youtube.com/watch?v=rLS-BEvlEyY)
-
-
-
-
-
-
-
-
- [1]: http://phlow.github.io/feeling-responsive/documentation/
- [2]: https://github.com/Phlow/feeling-responsive/blob/gh-pages/LICENSE
- [3]: http://phlow.github.io/feeling-responsive/info/
- [4]: https://www.youtube.com/watch?v=rLS-BEvlEyY
- [5]: https://github.com/TWiStErRob
- [6]: https://phlow.github.io/feeling-responsive/changelog/
- [7]: http://phlow.github.io/feeling-responsive/
- [8]: http://phlow.github.io/simplicity/
- [9]: #
- [10]: #
+#### You can run `jekyll serve --watch` and `grunt watch` at the same time to watch for changes and then build them all at once.
