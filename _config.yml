@@ -1,88 +1,58 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-title: "MADness"
-description: A Template for Jekyll
+title-bold: Forty
+title-normal: by HTML5 UP
+email: youremailaddress@gmail.com
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+url: "https://andrewbanchich.gitlab.io" # the base hostname & protocol for your site
+author: 
+street_address: 1234 Somewhere Road
+city: Nashville
+state: TN
+zip_code: 55555
+country: United States of America
+phone: (716) 555-5555
 
-# Files
-baseurl:
-pagesdir: pages
-assets:
-  libs: assets/libs
-  owner: assets/owner
-logo: logo.png
-discus_shortname: MADness
-email: mad@ness.com
-url: "http://madforjekyll.github.io"
-search: true
-share: true
-comments: true
-
-# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
-readtime: true
-
-# Specify the average Words per minute. If not defined, 180 will be used
-wpm: 200
-
-# Owner/author information
-owner:
-  name:   MADness
-  avatar: avatar.jpg
-  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    MAD for Jekyll
-
-# Social networking links used in footer. Update and remove as you like.
-twitter_username: MAD4Jekyll
-facebook_username: MAD4Jekyll
-github_username: MAD4Jekyll
-deviantart_username: MAD4Jekyll
-500px_username: MAD4Jekyll
-flickr_username: MAD4Jekyll
-instagram_username: MAD4Jekyll
-
- 
-# Internal nav
-nav:
- writing: "root_url/writing/"
- gallery: "root_url/gallery/"
- about: "root_url/about/"
-
-
-# Server
-destination:      	 ./_site
-port:             	 4000
-
-
-#dependencies
-# Gems
+# Plugins
 gems:
-  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jemoji
 
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages" 
+tiles-count: 6
+
+# Social settings
+500px_url: 
+facebook_url: 
+github_url: 
+gitlab_url: https://gitlab.com/u/andrewbanchich
+googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+instagram_url: https://instagram.com
+linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+pinterest_url: 
+slack_url: 
+twitter_url: https://twitter.com/andrewbanchich
 
 # Build settings
-highlighter:         rouge
-markdown:           kramdown
-kramdown:
-    extensions:     
-     - Hard_wrap
-     - no_intra_emphasis
-     - strikethrough
-     - fenced_code_blocks
-     - autolink
-     - tables
-     - with_toc_data
-     - highlight
-     - footnotes
-    input:          GFM
-sass:
-    style:          :compressed
-paginate: 5
-paginate_path: "/writing/page:num/"
-permalink: "/writing/:title/"
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-slugify: "pretty"
+markdown: kramdown
 
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   UA-xxxxxxxx-x
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+# Plugin: jekyll-seo-tag
+twitter:
+  username: andrewbanchich
+# Add one or more of the following
+facebook:
+  app_id: 
+  publisher: 
+  admins: 
+logo:
+google_site_verification: 

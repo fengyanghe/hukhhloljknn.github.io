@@ -1,52 +1,69 @@
-# MAD4Jekyll - Theme for Jekyll 
+# Forty - Jekyll Theme
 
-> !!! Configured for **USER** pages !!!
+A Jekyll version of the "Forty" theme by [HTML5 UP](https://html5up.net/).  
 
-## Welcome to MAD4Jekyll!
-     
+![Forty Theme](assets/images/forty.jpg "Forty Theme")
 
-### 'MAD4Jekyll' is a theme for [Jekyll](https://github.com/jekyll/)
+# How to Use
 
-> The template has been revised as of August 27th, 2016.
+For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details, 
+or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
+and [creating pages](https://jekyllrb.com/docs/pages/).
 
-----------
+- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
+- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file! The `.gitlab-ci.yml` file is only needed for GitLab Pages, so feel free to delete this if you are using GitHub instead.
 
-> A big thank you to <a href="https://github.com/patmuk">Patrick Mukherjee</a> for his contribution on regenerating the code.
+# Added Features
+
+* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
+* Use `_config.yml` to **set whether the homepage tiles should pull pages or posts**, as well as how many to display.
+* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
+* **Automatic sitemap generation** via the [Jekyll Sitemap Generator](https://github.com/jekyll/jekyll-sitemap) plugin.
+* **Automatic RSS/Atom feed generation** via the [Jekyll Feed](https://github.com/jekyll/jekyll-feed) plugin.
+* **Automatic SEO** via the [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag) plugin.
+* :thumbsup: **Emoji** support via the [Jemoji](https://github.com/jekyll/jemoji) plugin.
+* Set **featured images** in front matter.
+
+# Credits
+
+Original README from HTML5 UP:
+
+```
+Forty by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-### It is based on [Clean Blog](http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/) theme by [Start Bootstrap](http://startbootstrap.com/).
+This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
+creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
+set up to smoothly transition to secondary landing pages (for which a separate page
+template is provided), and includes a number of neat effects (check out the menu!),
+extra features, and all the usual stuff you'd expect. Hope you dig it!
 
-     
-#  Homepage  
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
 
-#### Header Image
+(* = not included)
 
-#### A brief description
+AJ
+aj@lkn.io | @ajlkn
 
-#### A slider (it is turned off by default, since there is a also a separate section for a gallery)
 
-#### Contact Info
-            
+Credits:
 
-#  Navbar 
+	Demo Images:
+		Unsplash (unsplash.com)
 
-#### A logo on the left side
- 
-#### 3 Pages for <a href="{{ site.baseurl }}/writing/">'blogging'</a>, <a href="{{ site.baseurl }}/gallery/">'gallery sliders'</a>, <a href="{{ site.baseurl }}/about/">'about'</a>.
-       
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
 
-#####  Search page, with all the tags and categories at the bottom
+	Other:
+		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		background-size polyfill (github.com/louisremi)
+		Misc. Sass functions (@HugoGiraudel)
+		Respond.js (j.mp/respondjs)
+		Skel (skel.io)
+```
 
-##### Footnotes poping up.
-
->## !!! IMPORTANT !!! Before You Begin
->
->####  Set the **_config.yml** file, with your personal info!
-
-## What's Included
-
-#### A full Jekyll environment is included with this theme. If you have Jekyll installed, simply run `jekyll serve` in your command line and preview the build in your browser. You can use `jekyll serve --watch` to watch for changes in the source files as well.
-
-#### A Grunt environment is also included. There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering `grunt` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
-
-#### You can run `jekyll serve --watch` and `grunt watch` at the same time to watch for changes and then build them all at once.
+Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
