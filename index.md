@@ -2,7 +2,7 @@
 layout: home
 title: Home
 landing-title: This is YangheFeng's Website.
-description: I focus on machine learning, especially reinforcement learning.
+description: I focus on machine learning, especially <p>reinforcement learning</p>.
 image: 
 author: 
 nav-menu: 
@@ -33,9 +33,9 @@ nav-menu:
 <section id="two">
 	<div class="inner">
 		<header class="major">
-			<h2>Massa libero</h2>
+			<h2>Studies</h2>
 		</header>
-		<p>There are some studies on machine learning.</p>
+		<p>There are some my lastest studies on machine learning.</p>
 		<ul class="actions">
 			<li><a href="landing.html" class="button next">Get Started</a></li>
 		</ul>
