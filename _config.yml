@@ -11,7 +11,7 @@ title-normal: by HTML5 UP
 email: fengyanghe@gmail.com
 description: This is yanghe feng's website.<br/>
 Yanghe Feng, Ph.D, Research Assistant Professor with Information System and Engineering Lab in National University of Defense Technology, Changsha, 410073, P.R.China
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fengyanghe.gitlab.io" # the base hostname & protocol for your site
 author: 
 street_address: National University of Defense Tecnology
