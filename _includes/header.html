@@ -18,7 +18,7 @@
 	    	{% endif %}
 		{% endfor %}
 		{% for page in site.pages %}
-		    {% if page.layout != "home" %}
+		    {% if page.layout == "landing" %}
 		        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 		    {% endif %}
 		{% endfor %}

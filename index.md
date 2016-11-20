@@ -37,7 +37,7 @@ nav-menu:
 		</header>
 		<p>There are some my lastest studies on machine learning.</p>
 		<ul class="actions">
-			<li><a href="landing.html" class="button next">Get Started</a></li>
+			<li><a href="landing.html" class="button next">Let's Go</a></li>
 		</ul>
 	</div>
 </section>

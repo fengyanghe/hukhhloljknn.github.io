@@ -29,11 +29,13 @@ gems:
 # Homepage tiles
 tiles-source: posts # accepts "posts" or "pages" 
 tiles-count: 8
+highlighter: pygments
+excerpt_separator: <!--excerpt-->
 
 # Social settings
 500px_url: 
 facebook_url: 
-github_url: 
+github_url: www.github.com/fengyanghe/
 gitlab_url: 
 googleplus_url: 
 instagram_url:
