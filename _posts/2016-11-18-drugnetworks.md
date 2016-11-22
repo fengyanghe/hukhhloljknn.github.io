@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Drug Target Protein-Protein Interaction Networks: A Systematic Perspective"
-description: ""
+description: "Yanghe Feng, Tengjiao Wang"
 category: 
 tags: []
 image: assets/images/drug_discover-biggest3.jpg
