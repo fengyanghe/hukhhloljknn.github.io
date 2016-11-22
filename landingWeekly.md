@@ -1,7 +1,7 @@
 ---
 layout: landing
-title: Lastest Studies
-description: 冯旸赫的研究档案.
+title: Awesome Papers Weekly 
+description: 学习小组周报.
 image: assets/images/head.jpg
 nav-menu: yes
 ---
@@ -26,22 +26,24 @@ nav-menu: yes
 <div id="main">
 <section id="one" class="spotlights">
 	{% for post in site.posts %}
-		<section>
-			<a href="{{ post.url }}" class="image">
-				<img src="{{ post.image }}" alt="" data-position="top center" />
-			</a>
-			<div class="content">
-				<div class="inner">
-					<header class="major">
-						<h3>{{ post.title }}</h3>
-					</header>
-					<p>{{ post.excerpt }}</p>
-					<ul class="actions">
-						<li><a href="{{ post.url }}" class="button">More</a></li>
-					</ul>
+ 		{% if post.category == "paper" %}
+			<section>
+				<a href="{{ post.url }}" class="image">
+					<img src="{{ post.image }}" alt="" data-position="top center" />
+				</a>
+				<div class="content">
+					<div class="inner">
+						<header class="major">
+							<h3>{{ post.title }}</h3>
+						</header>
+						<p>{{ post.excerpt }}</p>
+						<ul class="actions">
+							<li><a href="{{ post.url }}" class="button">More</a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		{% endif %}
 	{% endfor %}
 </section>
 

@@ -2,7 +2,7 @@
 layout: post
 title: "OCC or PU Learning2.0"
 description: "Wang Qi, Feng Yanghe"
-category: 
+category: "paper"
 tags: []
 image: assets/images/occ2.0.jpg
 ---

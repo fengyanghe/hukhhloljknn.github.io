@@ -2,6 +2,7 @@
 layout: post
 title: Drug target proteins prediction with network properties
 description: Yanghe Feng, Tengjiao Wang
+category: "paper"
 image: assets/images/pic01.jpg
 ---
 
