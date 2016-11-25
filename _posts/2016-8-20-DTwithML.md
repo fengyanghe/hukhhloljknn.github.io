@@ -2,6 +2,7 @@
 layout: post
 title: Drug Targets Properties Analysis and Prediction with Machine Learning
 description: Yanghe Feng, Tengjiao Wang
+category: "paper"
 image: assets/images/pic06.jpg
 ---
 

@@ -26,7 +26,7 @@ nav-menu: yes
 <div id="main">
 <section id="one" class="spotlights">
 	{% for post in site.posts %}
- 		{% if post.category == "paper" %}
+ 		{% if post.category == "weekly" %}
 			<section>
 				<a href="{{ post.url }}" class="image">
 					<img src="{{ post.image }}" alt="" data-position="top center" />

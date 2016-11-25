@@ -2,6 +2,7 @@
 layout: post
 title: Efficient Data Mining Algorithms for Screening Potential Proteins of Drug Targets
 description: Wang Qi, Jincai Huang, YangHe Feng, JiaWei Fei
+category: "paper"
 image: assets/images/pic02.jpg
 ---
 

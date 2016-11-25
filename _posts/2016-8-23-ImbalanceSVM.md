@@ -2,6 +2,7 @@
 layout: post
 title: A Novel Ensemble Method for Imbalanced Data Learning-Bagging of Extrapolation-SMOTE SVM
 description: Qi Wang; ZhiHao Luo; JinCai Huang; YangHe Feng; Zhong Liu
+category: "paper"
 image: assets/images/pic03.jpg
 ---
 

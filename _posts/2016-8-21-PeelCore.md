@@ -2,6 +2,7 @@
 layout: post
 title: Peeling the Drug Target Proteins Network by a Core Decomposition Method
 description: Yanghe Feng, Tengjiao Wang
+category: "paper"
 image: assets/images/pic05.jpg
 ---
 
