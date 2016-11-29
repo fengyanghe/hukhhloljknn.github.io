@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MoelingPO"
+title: "Modeling and Simulation Research on Propagation of Public Opinion"
 description: "Shiru Huang, Baoxin Xiuy, Yanghe Feng"
 category: "paper" 
 tags: []
