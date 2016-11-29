@@ -6,7 +6,7 @@ I use the template named A Jekyll version of the "Forty" theme by [HTML5 UP](htt
 
 	- create a site command: jekyll serve
 
-Formula edit:
+Equation edit:
 	
 >inline style:
 > 
