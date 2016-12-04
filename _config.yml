@@ -17,7 +17,7 @@ city: Changsha
 state: Hunan
 zip_code: 410073
 country: China
-phone: 0
+phone: 07318457661
 
 # Plugins
 gems:
@@ -35,7 +35,7 @@ excerpt_separator: <!--excerpt-->
 # Social settings
 500px_url: 
 facebook_url: 
-github_url: www.github.com/fengyanghe/
+github_url: https://www.github.com/fengyanghe
 gitlab_url: 
 googleplus_url: 
 instagram_url:
