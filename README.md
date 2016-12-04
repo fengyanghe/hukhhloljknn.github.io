@@ -6,7 +6,9 @@ I use the template named A Jekyll version of the "Forty" theme by [HTML5 UP](htt
 
 	- create a site command: jekyll serve
 
-Equation edit (<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>):
+Equation edit
+
+	Shown by `<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>`
 	
 >inline style:
 > 
