@@ -25,3 +25,11 @@ Equation edit
 >>or
 > 
 >      `\[...\]`
+
+Notes:
+
+1. Menu defined in header.html load all pages titles of which layout is landing type. There are only two pages which layout is landing type, one is landing.md. It filters all of my study paper which the category is "paper". The other is landingWeekly.md. It filters all of awesome papers which the category is "weekly". Therefore, one can create a new md of which the layout is post if one want to add the new menu item.
+
+2. The landing.md or landingWeekly.md is the summary for all of post pages. The introduce is {{ post.excerpt }} which refers the content end up ```<!-- excerpt -->```.
+
+3. The layout named post can show the image at the first of the content, in contrast, the page layout don't solve image.  

@@ -15,17 +15,19 @@
 	<ul class="links">
         {% for page in site.pages %}
 		    {% if page.layout == "home" %}
-		        <li><a href="{{ page.url | prepend: site.baseurl | remove: "index.html" }}">{{ page.title }}</a></li>
+		        <li><a href="{{ page.url | prepend: site.baseurl | remove: "index.html" }}" class="button special fit">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
 		{% for page in site.pages %}
 		    {% if page.layout == "landing" %}
-		        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+		        <li><a href="{{ page.url | prepend: site.baseurl }}" class="button fit">{{ page.title }}</a></li>
 		    {% endif %}
 		{% endfor %}
 	</ul>
+<!--
 	<ul class="actions vertical">
 		<li><a href="#" class="button special fit">Get Started</a></li>
 		<li><a href="#" class="button fit">Log In</a></li>
 	</ul>
+-->
 </nav>
