@@ -2,13 +2,13 @@
 layout: landing
 title: Awesome Papers Weekly 
 description: 学习小组周报.
-image: assets/images/head.jpg
+image: assets/images/head2.jpg
 nav-menu: yes
 ---
 
 <!-- Banner -->
 <!-- Note: The "styleN" class below should match that of the header element. -->
-<section id="banner" class="style2">
+<section id="banner" class="style5">
 	<div class="inner">
 		<span class="image">
 			<img src="{{ site.baseurl }}/{{ page.image }}" alt="" />
