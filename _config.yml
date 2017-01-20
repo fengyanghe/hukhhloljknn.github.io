@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title-bold: Yanghe Feng
+title-bold: Learning Group supported by Yanghe Feng
 email: fengyanghe@gmail.com
-description: Yanghe Feng, Ph.D, Research Assistant Professor with Information System and Engineering Lab in National University of Defense Technology, Changsha, 410073, P.R.China
+description: Learning Group with Information System and Engineering Lab in National University of Defense Technology, Changsha, 410073, P.R.China
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fengyanghe.github.io" # the base hostname & protocol for your site
 author: 
