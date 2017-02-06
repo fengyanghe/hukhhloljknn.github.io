@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: Lastest Studies
-description: 冯旸赫的研究档案.
+description: 研究档案.
 image: assets/images/head.jpg
 nav-menu: yes
 ---
