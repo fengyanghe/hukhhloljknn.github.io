@@ -23,14 +23,15 @@ title: About us
 <h3>Yanghe Feng</h3>
 
 <p><span class="image left"><img src="assets/photo/fengyanghe.jpg" alt="" /></span>
-Yanghe Feng Ph.D, Research Assistant Professor with Information System and Engineering Lab National University of Defense Technology, Changsha, 410073, P.R.China. He received his Ph.D degree in engineering from National University of
-Defense Technology in 2014. </p>
+<b>Yanghe Feng Ph.D</b> Research Assistant Professor with Information System and Engineering Lab National University of Defense Technology, Changsha, 410073, P.R.China. He received his Ph.D degree in engineering from National University of
+Defense Technology in 2014. His main research interests include reinforcement learning, transfer learning and game AI.</p>
+<p><span class="image right"><img src="assets/photo/fyh.jpg" alt="" /></span>His Ph.D thesis combined insights of advancement on Ensemble learning and Bayesian Networks. He proposed a novel classification algorithm that outperform the traditional classifier such as SVM, RF and etc.</p>
 
-<p><span class="image right"><img src="assets/images/pic10.jpg" alt="" /></span>His Ph.D thesis combined insights of advancement on Ensemble learning and Bayesian Networks and proposed a novel classification algorithm that outperform the traditional classifier such as SVM, RF and etc. Recently, his main interests include reinforcement learning, transfer learning and game AI.</p>
 
-<!-- Box -->
-<h3>Box</h3>
-<div class="box">
-	<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum.</p>
-</div>
+<!-- your name -->
+<h3>your name</h3>
 
+<p><span class="image left"><img src="assets/photo/yourPic1.jpg" alt="" /></span>
+<b>XXX Ph.D</b> XXXXXX XXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXX XXXXXXXXX XXX XXXXXX XXXXXXX XXXXX XXXXXXXX XXX XXXXX XXXX with Information System and Engineering Lab National University of Defense Technology, Changsha, 410073, P.R.China. He received his Ph.D degree in engineering from National University of
+Defense Technology in 2014. His main research interests include reinforcement learning, transfer learning.</p>
+<p><span class="image right"><img src="assets/photo/yourPic2.jpg" alt="" /></span>His Ph.D thesis 添加你们的简介，中英文均可.添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可，添加你们的简介，中英文均可</p>

@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: This is Learning Group's Website, supported by Yanghe Feng.
+landing-title: This is Learning Group's Website.
 description: We focus on machine learning, especially <p>reinforcement learning</p>.
 image: 
 author: 
