@@ -23,9 +23,13 @@
 		        <li><a href="{{ page.url | prepend: site.baseurl }}" class="button fit">{{ page.title }}</a></li>
 		    {% endif %}
 		{% endfor %}
-        
-        <ul class="actions vertical">
-		<li><a href="cv.html" class="button fit">About us</a></li>
+        {% for page in site.pages %}
+			{% if page.layout == "cv" %}
+				<ul class="actions vertical">
+				<li><a href="{{ page.url | prepend: site.baseurl }}" class="button fit">{{ page.title }}</a></li>
+			{% endif %}
+        {% endfor %}
+
 	    
 <!--
 	<ul class="actions vertical">
