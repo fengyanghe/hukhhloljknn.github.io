@@ -37,7 +37,7 @@ nav-menu:
 		</header>
 		<p>There are some our lastest studies on machine learning.</p>
 		<ul class="actions">
-			<li><a href="landing.html" class="button next">Joining us</a></li>
+			<li><a href="/paper/" class="button next">Joining us</a></li>
 		</ul>
 	</div>
 </section>
@@ -50,7 +50,7 @@ nav-menu:
 		</header>
 		<p>There are some awesome papers we recommended every week on machine learning.</p>
 		<ul class="actions">
-			<li><a href="landingWeekly.html" class="button next">Let's read</a></li>
+			<li><a href="/weekly/" class="button next">Let's read</a></li>
 		</ul>
 	</div>
 </section>
