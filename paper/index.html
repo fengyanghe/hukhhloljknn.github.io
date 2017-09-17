@@ -65,8 +65,9 @@ tag: paper
 {% endcapture %}
 
 <!-- 分页链接 -->
+<br />
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
+<div class="pagination" style="text-align:center">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
   {% else %}
@@ -91,4 +92,5 @@ tag: paper
 </div>
 {% endif %}
 </section>
+<br />
 

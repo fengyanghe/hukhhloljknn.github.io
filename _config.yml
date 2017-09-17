@@ -21,11 +21,11 @@ phone: 07318457661
 
 #paginate
 paginate:     6
-paginate_path:     ['weekly/page:num','paper/page:num']
+paginate_path:     ['paper/page:num', 'weekly/page:num', 'stduy/page:num']
 
 #menu
-menu_list:     ['Lastest Studies','Awesome Papers Weekly']
-menu_url_list:     ['/paper/','/weekly/']
+menu_list:     ['Lastest Studies', 'Awesome Papers Weekly', 'Intensive Studies']
+menu_url_list:     ['/paper/', '/weekly/', '/study/']
 
 # Plugins
 plugins:
