@@ -10,6 +10,8 @@
 	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </header>
 
+{% assign menu_max_index = site.menu_list.size | minus: 1 %}
+
 <!-- Menu -->
 <nav id="menu">
 	<ul class="links">
@@ -18,11 +20,9 @@
 		        <li><a href="{{ page.url | prepend: site.baseurl | remove: "index.html" }}" class="button special fit">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
-		{% for page in site.pages %}
-		    {% if page.layout == "landing" %}
-		        <li><a href="{{ page.url | prepend: site.baseurl }}" class="button fit">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
+        {% for menuindex in (0..menu_max_index) %}
+            <li><a href="{{ site.menu_url_list[menuindex] | prepend: site.baseurl }}" class="button fit">{{ site.menu_list[menuindex] }}</a></li>
+        {% endfor %}
         {% for page in site.pages %}
 			{% if page.layout == "cv" %}
 				<ul class="actions vertical">

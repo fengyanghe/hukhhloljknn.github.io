@@ -1,0 +1,95 @@
+---
+layout: landing
+title: Awesome Papers Weekly 
+description: 学习小组周报.
+image: assets/images/head2.jpg
+nav-menu: yes
+tag: weekly
+---
+
+<!-- Banner -->
+<!-- Note: The "styleN" class below should match that of the header element. -->
+<section id="banner" class="style5">
+	<div class="inner">
+		<span class="image">
+			<img src="{{ site.baseurl }}/{{ page.image }}" alt="" />
+		</span>
+		<header class="major">
+			<h1>{{ page.title }}</h1>
+		</header>
+		<div class="content">
+			<p>{{ page.description }}</p>
+		</div>
+	</div>
+</section>
+
+<!-- Main -->
+<div id="main">
+<section id="one" class="spotlights">
+
+<!-- 遍历分页后的文章 -->
+{% for post in paginator.posts %}
+
+{% capture impagepath %}
+{% if paginator.page > 1 %}
+../../{{ post.image }}
+{% else %}
+../{{ post.image }}
+{% endif %}
+{% endcapture %}
+
+<section>
+	<a href="{{ post.url }}" class="image">
+		<img src="{{ impagepath }}" alt="" data-position="top center" />
+	</a>
+	<div class="content">
+		<div class="inner">
+			<header class="major">
+				<h3>{{ post.title }}</h3>
+			</header>
+			<p>{{ post.excerpt }}</p>
+			<ul class="actions">
+				<li><a href="{{ post.url }}" class="button">More</a></li>
+			</ul>
+		</div>
+	</div>
+</section>		
+{% endfor %}
+
+{% capture firstpath %}
+/{{page.tag}}/
+{% endcapture %}
+
+{% capture nextpath %}
+/{{page.tag}}/page:num
+{% endcapture %}
+
+<!-- 分页链接 -->
+<br />
+{% if paginator.total_pages > 1 %}
+<div class="pagination" style="text-align:center">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ firstpath | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ nextpath | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+</section>
+<br />

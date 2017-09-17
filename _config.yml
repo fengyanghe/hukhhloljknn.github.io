@@ -19,8 +19,16 @@ zip_code: 410073
 country: China
 phone: 07318457661
 
+#paginate
+paginate:     6
+paginate_path:     ['paper/page:num', 'weekly/page:num', 'stduy/page:num']
+
+#menu
+menu_list:     ['Lastest Studies', 'Awesome Papers Weekly', 'Intensive Studies']
+menu_url_list:     ['/paper/', '/weekly/', '/study/']
+
 # Plugins
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
