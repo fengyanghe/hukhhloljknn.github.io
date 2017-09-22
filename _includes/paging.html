@@ -1,0 +1,129 @@
+<!--for section of the category pagin. finished by LiaoJiang 2017/9/23
+-->
+<script type="text/javascript" src="/assets/js/paging.js">
+</script>
+
+{% capture abstractlist %}{% for post in site.posts %}{% if post.category == page.tag %}init_abstract('{{ post.excerpt | replace_first: '<p>','' | replace_first: '</p>','' |  strip_newlines | strip_html }}');{% endif %}{% endfor %}{% endcapture %}
+	
+{% capture usllist %}{% for post in site.posts %}{% if post.category == page.tag %}{{ post.url }}#-#{% endif %}{% endfor %}{% endcapture %}
+
+{% capture titlelist %}{% for post in site.posts %}{% if post.category == page.tag %}{{ post.title }}#-#{% endif %}{% endfor %}{% endcapture %}
+
+{% capture imagelist %}{% for post in site.posts %}{% if post.category == page.tag %}../{{ post.image }}#-#{% endif %}{% endfor %}{% endcapture %}
+
+{% capture initfunc %}init_para({{site.page_post_count}},  '{{usllist}}', '{{imagelist}}', '{{titlelist}}');{% endcapture %}
+
+{% capture sepfunc %}sep_func(1);{% endcapture %}
+
+{% capture onloadfunc %}{{initfunc |  append: abstractlist | append: sepfunc }}{% endcapture %}
+
+<body onload="{{onloadfunc}}">
+
+	<!-- Main -->
+	<div id="main">
+	<section id="one1" class="spotlights">
+		<a id="url1" href="#" class="image">
+			<img id="image1" src="#" alt="" data-position="top center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3 id="title1">v1.title</h3>
+				</header>
+				<p id="abst1">abst1</p>
+				<ul class="actions">
+					<li><a id="url_1" href="#" class="button">More</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="one2" class="spotlights">
+		<a id="url2" href="#" class="image">
+			<img id="image2" src="#" alt="" data-position="top center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3 id="title2">v2.title</h3>
+				</header>
+				<p id="abst2">abst2</p>
+				<ul class="actions">
+					<li><a id="url_2" href="#" class="button">More</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="one3" class="spotlights">
+		<a id="url3" href="#" class="image">
+			<img id="image3" src="#" alt="" data-position="top center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3 id="title3">v3.title</h3>
+				</header>
+				<p id="abst3">abst3</p>
+				<ul class="actions">
+					<li><a id="url_3" href="#" class="button">More</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="one4" class="spotlights">
+		<a id="url4" href="#" class="image">
+			<img id="image4" src="#" alt="" data-position="top center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3 id="title4">v4.title</h3>
+				</header>
+				<p id="abst4">abst4</p>
+				<ul class="actions">
+					<li><a id="url_4" href="#" class="button">More</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="one5" class="spotlights">
+		<a id="url5" href="#" class="image">
+			<img id="image5" src="#" alt="" data-position="top center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3 id="title5">v5.title</h3>
+				</header>
+				<p id="abst5">abst5</p>
+				<ul class="actions">
+					<li><a id="url_5" href="#" class="button">More</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="one6" class="spotlights">
+		<a id="url6" href="#" class="image">
+			<img id="image6" src="#" alt="" data-position="top center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3 id="title6">v6.title</h3>
+				</header>
+				<p id="abst6">abst6</p>
+				<ul class="actions">
+					<li><a id="url_6" href="#" class="button">More</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	</div>
+ 
+	<div id="paging"></div> 
+	<br />
+</body>
