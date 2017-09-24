@@ -5,19 +5,35 @@
 var urlArray = [];
 var picArray = [];
 var titleArray = [];
-var abstract = []; //摘要
+//var abstract = []; //摘要
 var limit = 0;    //每页项目数
 var pagecount = 0; //the pages count
 var crtpage = 1;  //the current page index start from 1
 var itemscount = 0;  //总文章数
 var splitstr = "#-#"; //分隔符
 var itemIdstr = "one"; //每篇文章的展示块 ID前缀
-var idArray = ["url", "title", "image", "url_", "abst"];
+var idArray = ["url", "title", "image", "url_"];
+var sIndex = 0;    //显示项目开始序号
+var showcount = 0; //本页显示项目数量
+var abstNodeList = []; //摘要节点列表
 
-//每调用一次，增加一篇文章的摘要
-function init_abstract(abstractstr) {
-    var abscount = abstract.length;
-    abstract[abscount] = abstractstr;
+//获取所有子节点列表,排除孙节点
+function getChildNodes(ele){
+   var childArr=ele.children,
+         childArrTem=new Array();  //  临时数组，用来存储符合条件的节点
+    for(var i=0,len=childArr.length;i<len;i++){
+        if(childArr[i].nodeType==1){
+            childArrTem.push(childArr[i]);  // push() 方法将节点添加到数组尾部
+        }
+    }
+    return childArrTem;
+}
+
+//初始化摘要节点列表
+function init_abstract() {
+    //var abscount = abstract.length;
+   // abstract[abscount] = abstractstr;
+    abstNodeList = getChildNodes(document.getElementById("ablist"));
 }
 
 //init pages, limit...
@@ -44,6 +60,28 @@ function init_para(page_postcount, urllist, piclist, titlelist) {
      }
 }
 
+//添加摘要节点
+function set_abstract() {
+    for (var i = 0; i < showcount; i++) {
+        var abstindex = sIndex + i;
+        var idstr = "abst" + (i+1);
+        var clonedNode = abstNodeList[abstindex].cloneNode(true);
+        clonedNode.setAttribute("id", "div-" + crtpage + "-" + i); // 修改一下id 值，避免id 重复,并方便切换页面后删除节点
+        clonedNode.setAttribute("style", "display: block;");
+        document.getElementById(idstr).appendChild(clonedNode);
+    }
+}
+
+//切换页面后删除节点
+function  removeAbstNodes() {
+    for (var i = 0; i < showcount; i++) {
+        var idstr = "abst" + (i+1);               //容器Id
+        var abstId = "div-" + crtpage + "-" + i;  //摘要节点Id
+        var abstNode = document.getElementById(abstId); 
+        document.getElementById(idstr).removeChild(abstNode); 
+    }
+}
+
 //do the selection
 /*optnum:
 *-1:previous page
@@ -51,9 +89,9 @@ function init_para(page_postcount, urllist, piclist, titlelist) {
 *other:select page num
 */
 function sep_func(optnum) {
-    var sIndex = 0;    //显示项目开始序号
-    var showcount = 0; //本页显示项目数量
     var idstr = "";    //页面ID标识变量
+
+     removeAbstNodes(); //在原有页面的项目数，页面序号等信息被覆盖前，删除原页面的摘要节点
 
     switch(optnum){
         case(-1):
@@ -65,6 +103,7 @@ function sep_func(optnum) {
             crtpage = optnum;
         break;
     }
+
 
     sIndex = (crtpage - 1) * limit;
     showcount = itemscount - sIndex;
@@ -92,16 +131,17 @@ function sep_func(optnum) {
         document.getElementById(idstr).href = urlArray[sIndex + i];
 
         //摘要更新
-        idstr = idArray[4] + (i + 1);
-        document.getElementById(idstr).innerHTML = abstract[sIndex + i];
+        //idstr = idArray[4] + (i + 1);
+       // document.getElementById(idstr).innerHTML = sIndex + i;
     }
+    set_abstract();
 
     //显示showcount个项目
     for (var i = 0; i < showcount; i++) {
         idstr = itemIdstr + (i + 1);
         if (document.getElementById(idstr).style.display == "none") 
         {
-            document.getElementById(idstr).style.display = "block";
+            document.getElementById(idstr).style.display = "";//block会影响CSS布局
         } 
     }
 

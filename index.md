@@ -55,7 +55,20 @@ nav-menu:
 	</div>
 </section>
 
+<!-- four -->
 <section id="four">
+	<div class="inner">
+		<header class="major">
+			<h2>Intensive Learning</h2>
+		</header>
+		<p>There are some intensive learning we've done to gain insight into machine learning.</p>
+		<ul class="actions">
+			<li><a href="/study/" class="button next">Let's see</a></li>
+		</ul>
+	</div>
+</section>
+
+<section id="five">
 	<div class="inner">
 		<header class="major">
 			<h2>About us</h2>
