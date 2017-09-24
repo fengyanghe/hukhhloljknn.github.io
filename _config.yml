@@ -23,7 +23,7 @@ phone: 07318457661
 page_post_count:     6
 
 #menu
-menu_list:     ['Lastest Studies', 'Awesome Papers Weekly', 'Intensive Studies']
+menu_list:     ['Lastest Studies', 'Awesome Papers Weekly', 'Intensive Learning']
 menu_url_list:     ['/paper/', '/weekly/', '/study/']
 
 # Plugins
