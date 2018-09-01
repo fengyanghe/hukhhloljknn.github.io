@@ -12,10 +12,7 @@ Equation edit
 	
 >inline style:
 > 
->      `$...$`
->>or
-> 
->      `\(....\)`
+>      \\(....\\)
 	
 > otherwise:
 > 
@@ -24,7 +21,7 @@ Equation edit
 >      $$
 >>or
 > 
->      `\[...\]`
+>      \\[........\\]
 
 Notes:
 
