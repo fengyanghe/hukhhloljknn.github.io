@@ -23,7 +23,7 @@ markdown是一种纯文本格式的标记语言。通过简单的标记语法，
 缺点：<!--excerpt-->
 
 1. 需要记一些语法（当然，是很简单。五分钟学会）。
-2. 有些平台不支持markdown编辑模式。 \\(i_1+i^333\\)
+2. inline公式 \\(i_1+i^333\\)
 
 ![test](/assets/images/markdown_test/1.jpg "dfsdfsd")
 
